@@ -1,7 +1,24 @@
 
 /* Layout
 ================================ */
+/*.orbit-container{
+  width: 100%;
+  height: 100%;
+}
+  
+  
+.orbit-slides-container{
+  width: 100%;
+  height: 100% !important;
+}
 
+  
+  li{
+    width: 100%;
+    height: 100%;
+    background-size: cover
+  }
+ */
 
 /* Media Queries
 ================================ */
@@ -13,8 +30,12 @@
 ================================ */
 .orbit-full{
   width:100%;
+  height: 100%;
   margin:auto;
 }
+
+
+
 
 .container{
  margin: 0 auto;
@@ -22,7 +43,17 @@
 
 }
 
+.side-nav{
+  position: absolute;
+  top:250px;
+  left:40px;
+  z-index: 999999;
+}
 
+.side-nav li a:not(.button){
+  color:white;
+  font-size: 21px
+}
 
 h1 {
   font: 400 60px/1.3 'Bree Serif', Georgia, serif;
@@ -41,31 +72,6 @@ h1.nameBanner{
 	letter-spacing:0.0625em;
 	position: absolute;
 	top:100px;
-}
-
-
-
-
-
-.bio{
-
-}
-
-
-.bio .video{
-	
-}
-
-
-.skills>div:nth-child(n){
-	width:15vw;
-	background-color: blue;
-	height: 20vh;
-    display: inline-block;
-    
-}
-.skills>div:first-of-type{
-	margin-left:2vw;
 }
 
 
