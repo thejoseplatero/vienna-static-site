@@ -22,6 +22,7 @@ h1.nameBanner{
   /*top:100px;*/
   text-align: center;
 
+
 }
 
 /* Layout
@@ -32,12 +33,22 @@ h1.nameBanner{
 /* Images
 ================================ */
 
-
-
-.orbit-full{
-  width:100%;
-  margin:auto;
+.full-bg-img{
+  min-height: 800px;
+  background: url(img/vienna.jpg) no-repeat;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow:hidden;
+  height: auto;
 }
+
+.orbit-container{
+  height:100%;
+}
+
+
   
   
 /* Nav
@@ -45,15 +56,15 @@ h1.nameBanner{
 
 .side-nav{
   position: absolute;
-  top:20px;
+  top:40px;
   left:40px;
   z-index: 999999;
-  display:none;
+/*  display:none;*/
 }
 
 .side-nav li a:not(.button){
   color:white;
-  font-size: 12px;
+  font-size: 21px;
   
 }
 
