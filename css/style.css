@@ -68,7 +68,7 @@ h1.nameBanner{
 }
 
   
-/* Imagea
+/* Images
 ================================ */
 
   
@@ -88,7 +88,9 @@ h1.nameBanner{
 }
 
 
-
+.divider{
+  width: 20%;
+}
 
 /* Media Queries
 ================================ */
