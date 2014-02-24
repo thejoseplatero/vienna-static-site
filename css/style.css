@@ -3,7 +3,6 @@
 ================================ */
 
 
-
 /* Typography
 ================================ */
 
@@ -14,8 +13,6 @@ h1{
  
  li{
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-
-
  }
 
 .uppercase{
@@ -24,6 +21,10 @@ h1{
 
 /* Logo
 ================================ */
+.header-main{
+  position: relative;
+  z-index: 99999999;
+}
 
 h1.nameBanner{
   color:white;
@@ -31,8 +32,12 @@ h1.nameBanner{
   background: rgba(0,0,0,0.4);
   letter-spacing:0.0625em;
   position: absolute;
-  top:1.25rem;
+  top: 1.25rem;
   padding: 0.625rem 1.25rem;
+}
+
+.nameBanner a{
+  color:white;
 }
 
 /* Layout
@@ -86,7 +91,6 @@ h1.nameBanner{
   color:white;
   font-size: 1.3125rem;
 }
-
 
 .divider{
   width: 20%;
