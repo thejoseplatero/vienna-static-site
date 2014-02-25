@@ -26,7 +26,7 @@ h1{
   z-index: 99999999;
 }
 
-h1.nameBanner{
+.logo-header{
   color:white;
   display:inline-block;
   background: rgba(0,0,0,0.4);
@@ -36,8 +36,12 @@ h1.nameBanner{
   padding: 0.625rem 1.25rem;
 }
 
-.nameBanner a{
+.logo-header a{
   color:white;
+}
+
+.made-by-jose{
+  
 }
 
 /* Layout
