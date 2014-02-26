@@ -41,7 +41,7 @@ h1{
 }
 
 .made-by-jose{
-  
+
 }
 
 /* Layout
@@ -94,6 +94,17 @@ h1{
 
 .divider{
   width: 20%;
+}
+
+/* Social
+================================ */
+
+.social-icons{
+ margin:5% 2%;
+}
+
+.size-36{
+  font-size: 36px;
 }
 
 /* Media Queries
