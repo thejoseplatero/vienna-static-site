@@ -1,0 +1,147 @@
+
+/* General
+================================ */
+@mixin full-bg {
+  min-height: 50rem;
+  overflow:hidden;
+  height: auto;
+
+}
+
+
+/* Typography
+================================ */
+$primary_color: blue;
+$secondary_color: white;
+
+h1{
+  font: 400 2.1325rem 'Bree Serif', Georgia, serif;
+}
+ 
+ li{
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+ }
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+/* Logo
+================================ */
+.header-main{
+  position: relative;
+  z-index: 99999999;
+}
+
+.logo-header{
+  color:white;
+  display:inline-block;
+  background: rgba(0,0,0,0.4);
+  letter-spacing:0.0625em;
+  position: absolute;
+  top: 1.25rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.logo-header a{
+  color:$secondary_color;
+}
+
+
+
+/* Layout
+================================ */
+
+
+
+/* Orbit
+================================ */
+
+.full-bg-img{
+/*  min-height: 50rem;
+  overflow:hidden;
+  height: auto;*/
+
+  @include full-bg;
+
+}
+
+.main_slide_img_1{
+  background: url("../assets/img/main/Rob_Fan6.jpg") no-repeat center center fixed;
+  background-size:cover;
+}
+.main_slide_img_2{
+  background: url("../assets/img/main/Rob_Fan2.jpg") no-repeat center center fixed;
+  background-size:cover;
+}
+
+.orbit-container{
+  height:90%;
+}
+
+  
+/* Images
+================================ */
+
+  
+/* Nav
+================================ */
+
+.side-nav{
+  position: absolute;
+  top:100px;
+  left:1.25rem;;
+  z-index: 999999;
+}
+
+.side-nav li a:not(.button){
+  color:white;
+  font-size: 1.3125rem;
+}
+
+.divider{
+  width: 20%;
+}
+
+/* Social
+================================ */
+
+.social-icons{
+ margin:5% 2%;
+}
+
+.size-36{
+  font-size: 36px;
+}
+
+/* Media Queries
+================================ */
+
+/*Small screens*/
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) { } 
+/* Medium screens*/
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/*Large screens*/
+@media only screen and (min-width: 64.063em) { 
+
+
+
+
+} 
+
+/* XLarge screens*/
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+/* XXLarge screens*/
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
+
+
+
+
+
+
