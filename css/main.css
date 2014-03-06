@@ -1,61 +1,85 @@
-/*
-Syntax error: Invalid CSS after "    &": expected "{", was "li a:not(.button){"
-              
-              "li" may only be used at the beginning of a compound selector.
-        on line 95 of ./main.scss
+/* General
+================================ */
+/* Typography
+================================ */
+h1 {
+  font: 400 2.1325rem 'Bree Serif', Georgia, serif; }
 
-90: .side-nav{
-91:   position: absolute;
-92:   top:100px;
-93:   left:1.25rem;;
-94:   z-index: 999999;
-95:     &li a:not(.button){
-96:     color:white;
-97:     font-size: 1.3125rem;
-98:   }
-99: }
-100: 
+li {
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif; }
 
-Backtrace:
-./main.scss:95
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1149:in `expected'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:692:in `block in simple_selector_sequence'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1095:in `throw_error'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:692:in `simple_selector_sequence'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:640:in `_selector'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:619:in `selector'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:603:in `selector_sequence'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:528:in `ruleset'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1105:in `block in catch_error'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1105:in `catch'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:1105:in `catch_error'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"    &\": expected \"{\", was \"li a:not(.button){\"\A               \A               \"li\" may only be used at the beginning of a compound selector.\A         on line 95 of ./main.scss\A \A 90: .side-nav{\A 91:   position: absolute;\A 92:   top:100px;\A 93:   left:1.25rem;;\A 94:   z-index: 999999;\A 95:     &li a:not(.button){\A 96:     color:white;\A 97:     font-size: 1.3125rem;\A 98:   }\A 99: }\A 100: "; }
+.uppercase {
+  text-transform: uppercase; }
+
+/* Logo
+================================ */
+.header-main {
+  position: relative;
+  z-index: 99999999; }
+  .header-main h1 {
+    color: white;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.0625em;
+    position: absolute;
+    top: 1.25rem;
+    padding: 0.625rem 1.25rem; }
+    .header-main h1 a {
+      color: white; }
+
+/* Layout
+================================ */
+/* Orbit
+================================ */
+.orbit-container {
+  height: 90%; }
+
+.main_slide_img_1 {
+  min-height: 50rem;
+  overflow: hidden;
+  height: auto;
+  background: url("../assets/img/main/Rob_Fan6.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.main_slide_img_2 {
+  min-height: 50rem;
+  overflow: hidden;
+  height: auto;
+  background: url("../assets/img/main/Rob_Fan2.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+/* Images
+================================ */
+/* Nav
+================================ */
+.side-nav {
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  z-index: 999999; }
+  .side-nav li a:not(.button) {
+    color: white;
+    font-size: 1.3125rem; }
+  .side-nav .divider {
+    width: 20%; }
+
+/* Social
+================================ */
+.social-icons {
+  margin: 5% 2%; }
+
+.size-36 {
+  font-size: 36px; }
+
+/* Media Queries
+================================ */
+/*Small screens*/
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Medium screens*/
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/*Large screens*/
+/* XLarge screens*/
+/* min-width 1441px, xlarge screens */
+/* XXLarge screens*/
+/* min-width 1921px, xlarge screens */

@@ -1,12 +1,15 @@
-
-/* General
-================================ */
-@mixin full-bg {
+@mixin full-bg ($url_path){
   min-height: 50rem;
   overflow:hidden;
   height: auto;
-
+  background: url($url_path) no-repeat center center fixed;
+  background-size: cover;
 }
+
+
+
+/* General
+================================ */
 
 
 /* Typography
@@ -30,22 +33,21 @@ h1{
 ================================ */
 .header-main{
   position: relative;
-  z-index: 99999999;
+  z-index: 99999999; 
+  h1{
+    color:white;
+    display:inline-block;
+    background: rgba(0,0,0,0.4);
+    letter-spacing:0.0625em;
+    position: absolute;
+    top: 1.25rem;
+    padding: 0.625rem 1.25rem;
+    a { 
+      color:$secondary_color;
+      }
+  }
 }
 
-.logo-header{
-  color:white;
-  display:inline-block;
-  background: rgba(0,0,0,0.4);
-  letter-spacing:0.0625em;
-  position: absolute;
-  top: 1.25rem;
-  padding: 0.625rem 1.25rem;
-}
-
-.logo-header a{
-  color:$secondary_color;
-}
 
 
 
@@ -56,28 +58,20 @@ h1{
 
 /* Orbit
 ================================ */
-
-.full-bg-img{
-/*  min-height: 50rem;
-  overflow:hidden;
-  height: auto;*/
-
-  @include full-bg;
-
-}
-
-.main_slide_img_1{
-  background: url("../assets/img/main/Rob_Fan6.jpg") no-repeat center center fixed;
-  background-size:cover;
-}
-.main_slide_img_2{
-  background: url("../assets/img/main/Rob_Fan2.jpg") no-repeat center center fixed;
-  background-size:cover;
-}
-
 .orbit-container{
   height:90%;
 }
+
+
+.main_slide_img_1{
+  @include full-bg("../assets/img/main/Rob_Fan6.jpg");
+
+}
+.main_slide_img_2{
+  @include full-bg("../assets/img/main/Rob_Fan2.jpg");
+
+}
+
 
   
 /* Images
@@ -92,16 +86,17 @@ h1{
   top:100px;
   left:1.25rem;;
   z-index: 999999;
+    li a:not(.button){
+    color:white;
+    font-size: 1.3125rem;
+    }
+    .divider{
+      width: 20%;
+    }
 }
 
-.side-nav li a:not(.button){
-  color:white;
-  font-size: 1.3125rem;
-}
 
-.divider{
-  width: 20%;
-}
+
 
 /* Social
 ================================ */
