@@ -9,36 +9,3 @@
 @import "pages/_vienna.scss";
 
 
-
-
-/* Media Queries
-================================ */
-
-/*Small screens*/
-
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-@media only screen and (max-width: 40em) { } 
-/* Medium screens*/
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-/*Large screens*/
-@media only screen and (min-width: 64.063em) { 
-
-
-
-
-} 
-
-/* XLarge screens*/
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
-/* XXLarge screens*/
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
-
-
-
-
-
-

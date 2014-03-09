@@ -4,25 +4,20 @@
 ================================ */
 /* Typography
 ================================ */
-/* line 11, _globals.scss */
 h1 {
   font: 400 2.1325rem 'Bree Serif', Georgia, serif; }
 
-/* line 15, _globals.scss */
 li {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif; }
 
-/* line 19, _globals.scss */
 .uppercase {
   text-transform: uppercase; }
 
 /* Logo
 ================================ */
-/* line 27, _globals.scss */
 .header-main {
   position: relative;
   z-index: 99999999; }
-  /* line 30, _globals.scss */
   .header-main h1 {
     color: white;
     display: inline-block;
@@ -31,67 +26,45 @@ li {
     position: absolute;
     top: 1.25rem;
     padding: 0.625rem 1.25rem; }
-    /* line 38, _globals.scss */
     .header-main h1 a {
       color: white; }
 
 /* Social
 ================================ */
-/* line 48, _globals.scss */
 .social-icons {
   margin: 5% 2%; }
 
-/* line 52, _globals.scss */
 .size-36 {
   font-size: 36px; }
 
 /* Nav
 ================================ */
-/* line 61, _globals.scss */
 .side-nav {
   position: absolute;
   top: 100px;
   left: 1.25rem;
   z-index: 999999; }
-  /* line 66, _globals.scss */
   .side-nav li a:not(.button) {
     color: white;
     font-size: 1.3125rem; }
-  /* line 70, _globals.scss */
   .side-nav .divider {
     width: 20%; }
 
 /* Orbit
 ================================ */
-/* line 3, pages/_vienna.scss */
 .orbit-container {
   height: 90%; }
 
-/* line 7, pages/_vienna.scss */
-.main_slide_img_1 {
+.main-ob-1 {
   min-height: 50rem;
   overflow: hidden;
   height: auto;
   background: url("../assets/img/main/Rob_Fan6.jpg") no-repeat center center fixed;
   background-size: cover; }
 
-/* line 11, pages/_vienna.scss */
-.main_slide_img_2 {
+.main-ob-2 {
   min-height: 50rem;
   overflow: hidden;
   height: auto;
   background: url("../assets/img/main/Rob_Fan2.jpg") no-repeat center center fixed;
   background-size: cover; }
-
-/* Media Queries
-================================ */
-/*Small screens*/
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
-/* Medium screens*/
-/* min-width 641px, medium screens */
-/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-/*Large screens*/
-/* XLarge screens*/
-/* min-width 1441px, xlarge screens */
-/* XXLarge screens*/
-/* min-width 1921px, xlarge screens */
