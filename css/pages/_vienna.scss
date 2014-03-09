@@ -1,0 +1,15 @@
+/* Orbit
+================================ */
+.orbit-container{
+  height:90%;
+}
+
+.main_slide_img_1{
+  @include full-bg("../assets/img/main/Rob_Fan6.jpg");
+
+}
+.main_slide_img_2{
+  @include full-bg("../assets/img/main/Rob_Fan2.jpg");
+}
+
+

@@ -1,0 +1,7 @@
+@mixin full-bg ($url_path){
+  min-height: 50rem;
+  overflow:hidden;
+  height: auto;
+  background: url($url_path) no-repeat center center fixed;
+  background-size: cover;
+}

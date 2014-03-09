@@ -1,113 +1,15 @@
-@mixin full-bg ($url_path){
-  min-height: 50rem;
-  overflow:hidden;
-  height: auto;
-  background: url($url_path) no-repeat center center fixed;
-  background-size: cover;
-}
+// Definitions
+@import "_variables.scss";
+@import "_mixins.scss";
+
+// Global Styles
+@import "globals.scss";
+
+// Page Specifics
+@import "pages/_vienna.scss";
 
 
 
-/* General
-================================ */
-
-
-/* Typography
-================================ */
-$primary_color: blue;
-$secondary_color: white;
-
-h1{
-  font: 400 2.1325rem 'Bree Serif', Georgia, serif;
-}
- 
- li{
-  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
- }
-
-.uppercase{
-  text-transform: uppercase;
-}
-
-/* Logo
-================================ */
-.header-main{
-  position: relative;
-  z-index: 99999999; 
-  h1{
-    color:white;
-    display:inline-block;
-    background: rgba(0,0,0,0.4);
-    letter-spacing:0.0625em;
-    position: absolute;
-    top: 1.25rem;
-    padding: 0.625rem 1.25rem;
-    a { 
-      color:$secondary_color;
-      }
-  }
-}
-
-
-
-
-/* Layout
-================================ */
-
-
-
-/* Orbit
-================================ */
-.orbit-container{
-  height:90%;
-}
-
-
-.main_slide_img_1{
-  @include full-bg("../assets/img/main/Rob_Fan6.jpg");
-
-}
-.main_slide_img_2{
-  @include full-bg("../assets/img/main/Rob_Fan2.jpg");
-
-}
-
-
-  
-/* Images
-================================ */
-
-  
-/* Nav
-================================ */
-
-.side-nav{
-  position: absolute;
-  top:100px;
-  left:1.25rem;;
-  z-index: 999999;
-    li a:not(.button){
-    color:white;
-    font-size: 1.3125rem;
-    }
-    .divider{
-      width: 20%;
-    }
-}
-
-
-
-
-/* Social
-================================ */
-
-.social-icons{
- margin:5% 2%;
-}
-
-.size-36{
-  font-size: 36px;
-}
 
 /* Media Queries
 ================================ */
