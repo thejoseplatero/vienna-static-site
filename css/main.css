@@ -55,16 +55,16 @@ li {
 .orbit-container {
   height: 90%; }
 
-.main-ob-1 {
+.ob-full-main-1 {
   min-height: 50rem;
   overflow: hidden;
   height: auto;
-  background: url("../assets/img/main/Rob_Fan6.jpg") no-repeat center center fixed;
+  background: url(../assets/img/main/main-1.jpg) no-repeat center center fixed;
   background-size: cover; }
 
-.main-ob-2 {
+.ob-full-main-2 {
   min-height: 50rem;
   overflow: hidden;
   height: auto;
-  background: url("../assets/img/main/Rob_Fan2.jpg") no-repeat center center fixed;
+  background: url(../assets/img/main/main-2.jpg) no-repeat center center fixed;
   background-size: cover; }

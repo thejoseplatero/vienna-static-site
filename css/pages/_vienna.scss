@@ -4,7 +4,8 @@
   height:90%;
 }
 
-@include full-bg-ob-class("main-ob-1", "../assets/img/main/Rob_Fan6.jpg");
-@include full-bg-ob-class("main-ob-2","../assets/img/main/Rob_Fan2.jpg");
+
+@include ob-full-class("../assets/img/main/", "main-1");
+@include ob-full-class("../assets/img/main/", "main-2");
 
 

@@ -1,9 +1,10 @@
-@mixin full-bg-ob-class ($name, $url_path){
-  .#{$name} {
+@mixin ob-full-class ($url_path, $file_name){
+  .ob-full-#{$file_name} {
     min-height: 50rem;
     overflow:hidden;
     height: auto;
-    background: url($url_path) no-repeat center center fixed;
+    background: url(#{$url_path}#{$file_name}.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 }
+  
