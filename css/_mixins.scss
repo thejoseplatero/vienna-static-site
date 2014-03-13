@@ -1,6 +1,6 @@
-@mixin ob-full-class ($url_path, $file_name){
+@mixin ob-full-class ($url_path, $file_name, $min_height: 50rem){
   .ob-full-#{$file_name} {
-    min-height: 50rem;
+    min-height: $min_height;
     overflow:hidden;
     height: auto;
     background: url(#{$url_path}#{$file_name}.jpg) no-repeat center center fixed;
@@ -8,3 +8,11 @@
   }
 }
   
+
+@mixin team($url_path, $name, $members...){
+  @each $member in $members{
+    .#{$name}.#{$member}{
+      background:url(#{$url_path}#{$name}/#{$member}.jpg);
+    }
+  }
+}  
